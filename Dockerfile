@@ -1,3 +1,3 @@
 FROM httpd:2.4
 
-COPY ./public-html/ /usr/local/apache2/htdocs/
+COPY https://github.com/FrancioG/Franciog_docker /usr/local/apache2/htdocs/
