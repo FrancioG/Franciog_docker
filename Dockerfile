@@ -1,11 +1,3 @@
-FROM node:alpine
+FROM nginx:alpine
 
-WORKDIR /app
-
-COPY index.html .
-
-RUN npm install 
-
-COPY . .
-
-CMD ["node", "index.html"]
+COPY . /usr/share/nginx/html
